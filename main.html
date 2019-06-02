@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Top 4</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./media/mainlogo.png">
+</head>
+
+<body>
+    <nav>
+        <img src="./media/mainlogo.png" alt="logo">
+        <h1>Top 4 Hamburger Franchises in Korea</h1>
+        <input type="button" value="night" id="night_day" onclick="
+            if(document.querySelector('#night_day').value === 'night'){
+                document.querySelector('html').style.backgroundColor = 'black';
+                document.querySelector('#night_day').value = 'day';
+            } 
+            else {
+                document.querySelector('html').style.backgroundColor = 'rgb(070, 070, 070';
+                document.querySelector('#night_day').value = 'night';
+            }
+        ">
+        <a id="button" href="./index.html">뒤로가기</a>
+    </nav>
+    <main>
+        <section class="a item item1">
+            <img src="./media/mc.png" alt="">
+        </section>
+        <section class="b item item2">
+            <h2 onclick=window.open("./mcdonalds/mcdonalds.html","_self")>#1 Mc'donalds</h2>
+            <p onclick=window.open("./mcdonalds/mcdonalds.html","_self")>하루에 약 5,400만명의 고객이 찾고 있는 세계에서 가장 널리 알려진 체인 음식점이며, 햄버거 연쇄음식점으로는 가장 규모가 크다. 맥도날드는 주로 햄버거, 치킨류, 아침 메뉴, 디저트류를 팔고 있다. 최근의 웰빙 경향을 반영해 샐러드, 과일 제품을 팔고 있기도 하다.</p>
+        </section>
+        
+        <section class="b item item3" >
+            <h2 onclick=window.open("./momstouch/momstouch.html","_self")>#2 Mom's Touch</h2>
+            <p onclick=window.open("./momstouch/momstouch.html","_self")>미리 만들어 놓고 나눠주다시피 하는 판매가 아닌 '정성어린 한 끼 식사를 준비한다"는 마음가짐으로 주문을 받은 즉시 제조를 시작하여 따뜻하고 신선한 높은 퀄리티의 제품을 고객에게 제공한다.</p>
+        </section>
+        <section class="a item item4">
+            <img src="./media/ms2.png" alt="">
+        </section>
+        
+        <section class="a item item5">
+            <img src="./media/bg.png" alt="">
+        </section>
+        <section class="b item item6">
+            <h2 onclick=window.open("./bugerking/burgerking.html","_self")>#3 Burger King</h2>
+            <p onclick=window.open("./bugerking/burgerking.html","_self")>하루에 약 5,400만명의 고객이 찾고 있는 세계에서 가장 널리 알려진 체인 음식점이며, 햄버거 연쇄음식점으로는 가장 규모가 크다. 맥도날드는 주로 햄버거, 치킨류, 아침 메뉴, 디저트류를 팔고 있다. 최근의 웰빙 경향을 반영해 샐러드, 과일 제품을 팔고 있기도 하다.</p>
+        </section>
+        
+        <section class="b item item7">
+            <h2 onclick=window.open("./lotteria/lotteria.html","_self")>#4 Lotteria</h2>
+            <p onclick=window.open("./lotteria/lotteria.html","_self")>국내 패스트푸드 업계의 선두 기업으로 우리 입맛에 맞는 새로운 상품 개발로 한국인의 입맛을 사로잡는 메뉴 개발 및 빠르게 변해가는 고객의 취향과 욕구를 반영한 트렌디한 매장 구성, 버거뿐만 아니라 다양한 커피와 디저트 제품 등을 제공한다.</p>
+        </section>
+        <section class="a item item8">
+            <img src="./media/lt.png" alt="">
+        </section>
+    </main>
+</body>
+
+</html>

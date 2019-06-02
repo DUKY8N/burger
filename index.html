@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./media/mainlogo.png">
+</head>
+
+<body>
+    <nav>
+        <img src="./media/mainlogo.png" alt="logo">
+        <h1>Top 4 Hamburger Franchises in Korea</h1>
+        <input type="button" value="night" id="night_day" onclick="
+            if(document.querySelector('#night_day').value === 'night'){
+                document.querySelector('.contents').style.backgroundColor = 'rgb(070, 070, 070)';
+                document.querySelector('main').style.backgroundColor = 'rgb(157, 001, 001)';
+                document.querySelector('html').style.backgroundColor = 'rgb(157, 001, 001)';
+                
+                
+                document.querySelector('.contents').style.color = 'rgb(235, 235, 235)';
+                document.querySelector('span').style.color = 'black';
+                document.querySelector('#night_day').value = 'day';
+                
+            } 
+            else {
+                document.querySelector('.contents').style.backgroundColor = 'rgb(235, 235, 235)';
+                document.querySelector('main').style.backgroundColor = 'rgb(224, 015, 026)';
+                document.querySelector('html').style.backgroundColor = 'rgb(224, 015, 026)';
+                
+                document.querySelector('.contents').style.color = 'black';
+                document.querySelector('span').style.color = 'black';
+                document.querySelector('#night_day').value = 'night';
+                
+            }
+        ">
+        <a id="button" href="./main.html">Top4 알아보기</a>
+    </nav>
+    <main>
+        <div><img id="bg" src="./media/burger_sandwich.png" alt="burger"></div>
+        <p class="contents"><span  onclick=window.open("https://namu.wiki/w/%ED%96%84%EB%B2%84%EA%B1%B0","_blank")>Hamburger란?</span> <br>패티를 구운 후 빵 사이에 끼워먹는 음식이다. 세계화의 바이블급 인지도를 자랑하며, 세계로 퍼지는 과정에서 각종 문화가 뒤섞이다 보니 이것을 바탕으로 만든 온갖 바리에이션 음식들이 등장했다.19세기 독일 이민자들이 미국으로 들어오면서 햄버그 스테이크 또한 함께 들어왔다. 당시 명칭은 하크스테이크이나 함부르크식이라는 뜻에서 "함부르거(Hamburg-er)"라고 명명한 것이 시초. 이 햄버그 스테이크가 번이라고 부르는 빵 사이에 끼워진 것이 햄버거인데 이것의 시초는 아주 불분명하다. 햄버거 원조 주장으로는, 1904년 세인트루이스 박람회 때 박람회장 내의 한 식당에서 밀려드는 인파를 감당할 수 없어 이 햄버그를 둥근 빵 2개 사이에 끼워 핫 샌드위치 형식으로 팔게 되면서 오늘날 널리 알려진 햄버거가 탄생한 것이라는 주장, 1900년 덴마크 출신 이민자 루이스 라센이 코네티컷 주 뉴 헤이븐 시에서 자신의 레스토랑 'Louis' Lunch'에서 처음 개발해서 판매했다는 주장, 찰리 내그린이 1885년 위스콘신 주 시모어시에서 열린 '시모어 박람회'에서 납짝한 미트볼을 빵 두조각 사이에 끼워 판 것이 시초라는 주장 등, 정말 수 많은 주장들이 있다. 허나 분명한 것은 오늘날 햄버거라는 음식은 미국 어딘가에서 시작되고 변형되어 유행이 되었다는 것이다. 한국에 햄버거가 처음 전래된 것은 1950년 한국전쟁 때였으며, 당시 한반도에 파병 주둔중인 미군들이 미국식 햄버거를 먹게 된 것이 시초였다. 1979년에 롯데리아가 개점하면서 본격적으로 햄버거 시장을 열었고, 80년대 초중반에는 롯데리아, 아메리카나, 달라스 등의 토종 브랜드가 성업했지만 1984년 버거킹과 웬디스, 1988년 맥도날드, 1990년 하디스 등의 외산 브랜드가 들어오면서 롯데리아를 제외한 토종 프랜차이즈들은 대부분 시장에서 도태되어 오늘날에는 명맥만 남아있다.</p>
+    </main>
+</body>
+
+</html>

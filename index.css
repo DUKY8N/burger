@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'BlackHanSans';
+    src: url(./media/BlackHanSans.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'SDS';
+    src: url(./media/SDSwagger.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'SCD8';
+    src: url(./media/SCDream8.otf) format('truetype');
+}
+
+html {
+    background: rgb(224, 015, 026);
+}
+
+/*네이비게이션*/
+
+nav {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: rgb(235, 235, 235);
+    display: grid;
+    grid-template-columns: auto 9fr auto auto;
+    grid-template-areas:
+        "a b c d";
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+nav h1 {
+    grid-area: b;
+    margin: auto;
+    margin-left: 0;
+    text-align: left;
+    width: auto;
+    font-family: SDS;
+}
+
+nav img {
+    grid-area: a;
+    width: 50px;
+    margin: auto;
+    padding: 12px 25px;
+}
+
+#button {
+    grid: d;
+    margin: auto;
+    margin-right: 25px;
+    display: inline-block;
+    background-color: red;
+    box-shadow: 0 5px 0 darkred;
+    color: rgb(235, 235, 235);
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#button:hover {
+    background-color: #ce0606;
+}
+
+#button:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+#night_day {
+    grid-area: c;
+    margin: auto;
+    margin-right: 24px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*본문*/
+
+main {
+    background-color: rgb(224, 015, 026);
+    font-family: SCD8;
+    font-size: 24px;
+    word-break: keep-all;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "a b"
+}
+
+main * {
+    padding: 5%;
+}
+
+main img {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    padding: 50px;
+}
+
+.contents {
+    grid-area: b;
+    background-color: rgb(235, 235, 235);
+    display: inline-block;
+    height: 120%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+span {
+    display: inline-block;
+    background-color: yellow;
+    padding: 7px;
+    margin: 4px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+span:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media (max-width: 1300px) {
+    main {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "a"
+            "b";
+    }
+    
+    main img {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 0;
+        padding: 10px;
+    }
+    
+    .contents {
+        grid-area: b;
+        display: inline-block;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    main img {
+        max-width: 150px;
+        margin: auto;
+        margin-top: 0;
+        padding: 10px;
+    }
+    
+    nav h1 {
+        display: none;
+    }
+    
+    span {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    
+    #button {
+        font-size: 12px;
+        padding: 7px;
+    }
+    
+    p {
+        font-size: 15px;
+        padding-bottom: 9%;
+    }
+    
+    #night_day {
+        display: none;
+    }
+}

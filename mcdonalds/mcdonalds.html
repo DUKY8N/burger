@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Top 4</title>
+    <link rel="stylesheet" href="./mcdonalds.css">
+    <link rel="icon" href="../media/mainlogo.png">
+</head>
+
+<body>
+    <nav>
+        <img src="../media/mainlogo.png" alt="logo">
+        <h1>Top 4 Hamburger Franchises in Korea</h1>
+        <input type="button" value="night" id="night_day" onclick="
+            if(document.querySelector('#night_day').value === 'night'){
+                document.querySelector('html').style.backgroundColor = 'black';
+                document.querySelector('#night_day').value = 'day';
+            } 
+            else {
+                document.querySelector('html').style.backgroundColor = 'rgb(070, 070, 070';
+                document.querySelector('#night_day').value = 'night';
+            }
+        ">
+        <a id="button" href="../main.html">뒤로가기</a>
+    </nav>
+    <main>
+        <div class="logo">
+            <img src="../media/m_logo.png" alt="">
+            <h2>Mc'donalds</h2>
+        </div>
+        <div class="container">
+            <section>
+                <h3>특징</h3>
+                <div class="wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/1nftfFm8yhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p>하루에 약 5,400만명의 고객이 찾고 있는 세계에서 가장 널리 알려진 체인 음식점이며, 햄버거 연쇄음식점으로는 가장 규모가 크다. 맥도날드는 주로 햄버거, 치킨류, 아침 메뉴, 디저트류를 팔고 있다. 최근의 웰빙 경향을 반영해 샐러드, 과일 제품을 팔고 있기도 하다.</p>
+            </section>
+            <section>
+                <h3>버거 종류</h3>
+                <div class="wrap">
+                    <div class="item">
+                        <img src="./etc/1.png" alt="">
+                        <p>햄버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/2.png" alt="">
+                        <p>더블 치즈버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/3.png" alt="">
+                        <p>치즈버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/4.png" alt="">
+                        <p>쿼터파운더™ 치즈</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/5.png" alt="">
+                        <p>더블 쿼터파운더™ 치즈</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/6.png" alt="">
+                        <p>더블 불고기버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/7.png" alt="">
+                        <p>불고기버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/8.png" alt="">
+                        <p>크리스피 오리엔탈 치킨버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/9.png" alt="">
+                        <p>베이컨 토마토<br>디럭스™</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/10.png" alt="">
+                        <p>더블 1955 버거™</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/11.png" alt="">
+                        <p>1955 버거™</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/12.png" alt="">
+                        <p>슈비 버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/13.png" alt="">
+                        <p>슈슈 버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/14.png" alt="">
+                        <p>빅맥®</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/15.png" alt="">
+                        <p>맥스파이시®<br>상하이 버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/16.png" alt="">
+                        <p>메가맥™</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/17.png" alt="">
+                        <p>그릴드 머쉬룸 버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/18.png" alt="">
+                        <p>트리플 어니언 버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/19.png" alt="">
+                        <p>골든 에그 치즈버거</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/20.png" alt="">
+                        <p>에그 불고기 버거</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>스낵</h3>
+                <div class="wrap">
+                    <div class="item">
+                        <img src="./etc/snacks/1.png" alt="">
+                        <p>상하이 치킨 스냅랩</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/2.png" alt="">
+                        <p>모짜렐라 치즈스틱</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/3.png" alt="">
+                        <p>후렌치 후라이</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/4.png" alt="">
+                        <p>파인애플 후룻컵</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/5.png" alt="">
+                        <p>맥너겟®</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/6.png" alt="">
+                        <p>치킨 텐더</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/7.png" alt="">
+                        <p>해쉬 브라운</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/snacks/8.png" alt="">
+                        <p>디핑소스</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>디저트</h3>
+                <div class="wrap">
+                    <div class="item">
+                        <img src="./etc/desserts/1.png" alt="">
+                        <p>애플 파이</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/desserts/3.png" alt="">
+                        <p>오레오 맥플러리</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/desserts/4.png" alt="">
+                        <p>선데이 아이스크림</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/desserts/5.png" alt="">
+                        <p>오레오 아포가도</p>
+                    </div>
+                    <div class="item">
+                        <img src="./etc/desserts/6.png" alt="">
+                        <p>아이스크림콘</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
