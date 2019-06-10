@@ -235,4 +235,11 @@ h2 {
     main {
         margin: 0;
     }
+    
+    .vote > h2 {
+        display: none;
+    }
+    .vote {
+        padding: 0px;
+    }
 }
